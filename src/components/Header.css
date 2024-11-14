@@ -5,30 +5,34 @@
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
-  color: blue;
+  color: #241571;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensures the header stays on top of other elements */
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.header.scrolled {
+  background-color: #241571;
+  color: white;
+}
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Space between image and text */
+  gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: inherit;
 }
 
 .logo-image {
-  width: 100px; /* Adjust size as needed */
+  width: 100px;
   height: auto;
 }
 
-.logo-text {
-  font-size: 1.2rem;
-}
 .nav {
   display: flex;
   align-items: center;
@@ -42,10 +46,11 @@
 
 .nav-links li {
   cursor: pointer;
+  color: inherit;
 }
 
 .trial-button {
-  background-color: blue;
+  background-color: #241571;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -68,23 +73,19 @@
 .hamburger .line {
   width: 25px;
   height: 3px;
-  background-color: blue;
+  background-color: #241571;
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
-  /* Hide nav-links and trial button on smaller screens */
   .nav-links,
   .trial-button {
     display: none;
   }
 
-  /* Display the hamburger menu */
   .hamburger {
     display: flex;
   }
 
-  /* Show the navigation links when the menu is open */
   .nav.open .nav-links {
     display: flex;
     position: absolute;
@@ -105,5 +106,5 @@
 
 /* Adding spacing to account for the fixed header */
 body {
-  padding-top: 70px; /* Adjust this value to match the height of your header */
+  padding-top: 70px;
 }

@@ -2,16 +2,16 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center mt-20">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="bg-white rounded-lg shadow-lg p-10 max-w-2xl w-full text-gray-800 text-center">
         {/* Heading with No Bottom Margin */}
-        <h1 
-          className="text-4xl font-bold text-blue-800" 
+        <h1
+          className="text-4xl font-bold text-blue-800"
           style={{ fontSize: '2rem', fontWeight: 'bold', color: '#1e3a8a' }}
         >
           ABOUT US
         </h1>
-        
+
         {/* Main Paragraph with Left Margin */}
         <p className="text-lg leading-relaxed mt-4 ml-8"> {/* ml-8 adds left margin */}
           Kaushik Consulting, founded in 2023 and headquartered in Brandon, MS,
